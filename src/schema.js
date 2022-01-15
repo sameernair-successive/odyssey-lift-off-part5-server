@@ -43,6 +43,7 @@ const typeDefs = gql`
     description: String
     "The number of times a track has been viewed"
     numberOfViews: Int
+    durationInSeconds: Int
     "The track's complete array of Modules"
     modules: [Module!]!
   }
@@ -67,6 +68,7 @@ const typeDefs = gql`
     content: String
     "The module's video url, for video-based modules"
     videoUrl: String
+    durationInSeconds: Int
   }
 `;
 
